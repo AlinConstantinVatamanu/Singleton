@@ -11,7 +11,7 @@ public class Persona {
 		this.nombre = nombre;
 	}
 	
-	public static Persona crearInstancia(String nombre) {
+	public static Persona getInstance(String nombre) {
 		if (instancia == null) {
 			instancia = new Persona(nombre);
 		}
