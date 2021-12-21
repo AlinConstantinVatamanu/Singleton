@@ -18,10 +18,11 @@ public class SingletonApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
+		Persona instanciaPersona1 = persona.crearInstancia("Juan");
+		System.out.println(instanciaPersona1.getNombre());
 		
-		System.out.println(persona.crearInstancia("Juan"));
-		
-		System.out.println(persona.crearInstancia("Antonio"));
+		Persona instanciaPersona2 = persona.crearInstancia("Juan");
+		System.out.println(instanciaPersona2.getNombre());
 		
 	}
 
